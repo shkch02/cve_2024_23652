@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  buildkit_cve_checker:
+    build:
+      context: .
+      dockerfile: Dockerfile.buildkit_cve_test
+      args:
+        MARKER_PATH: /tmp/buildkit_cve_marker
+    # 이 서비스는 단순히 BuildKit build 실행용이라서 run은 필요 없음
