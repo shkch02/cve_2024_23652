@@ -4,7 +4,7 @@ import time
 import subprocess
 from pathlib import Path
 
-MARKER_DIR = "/tmp/buildkit_cve_marker"
+MARKER_DIR = str(Path("tmp").resolve())
 MARKER_FILE = os.path.join(MARKER_DIR, "marker.txt")
 DOCKERFILE_PATH = "Dockerfile.buildkit_cve_test"
 

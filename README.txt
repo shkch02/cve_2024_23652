@@ -5,6 +5,6 @@
 RUN --mount=type=bind,source=/tmp/buildkit_cve_marker,target=/mnt/test
 로 마운트
 
-3.
+3. 테스트 실행 (컨테이너가 아닌 해당 파이썬 실행) 
 python3 cve_2024_23652.py
 으로 빌드타임 호스트 컨테이너 공격시도

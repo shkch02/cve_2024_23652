@@ -6,5 +6,5 @@ services:
       context: .
       dockerfile: Dockerfile.buildkit_cve_test
       args:
-        MARKER_PATH: /tmp/buildkit_cve_marker
+        MARKER_PATH: ${PWD}/tmp
     # 이 서비스는 단순히 BuildKit build 실행용이라서 run은 필요 없음
